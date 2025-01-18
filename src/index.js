@@ -8,9 +8,12 @@ import { BrowserRouter, Routes, Route } from "react-router";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-    </Routes>
+     <Routes>
+    <Route path="/" element={<App />} >
+   
+    <Route path="/task/:id" element={<Task />} > {/* Dynamic Route */}
+  </Routes>
+
   </BrowserRouter>
 );
 
